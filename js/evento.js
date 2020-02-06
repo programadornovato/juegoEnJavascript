@@ -1,7 +1,8 @@
 
 document.addEventListener('DOMContentLoaded',function(){
     console.log("Inicia juego");
-    //console.log("tomamos medidas");
+    var a1=new Area(0,30,100,100);
+    var a2=new Area(100,30,100,100);
     medidas.tomaMedida();
 });
 
