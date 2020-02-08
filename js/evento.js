@@ -5,11 +5,16 @@ document.addEventListener('DOMContentLoaded',function(){
     var a2=new Area(100,30,100,100);
     medidas.tomaMedida();
     medidas.dibujarTiles();
+    teclas.iniciar();
 });
 
 var start=document.getElementById("start");
 start.addEventListener('click',function(){
     bucleInfinito.bucle();
+});
+var start=document.getElementById("mostrar");
+start.addEventListener('click',function(){
+    teclas.mostrarTeclas();
 });
 window.addEventListener('resize',function () {
     medidas.dibujarTiles();
