@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded',function(){
     medidas.tomaMedida();
     medidas.dibujarTiles();
     teclas.iniciar();
+    ajax.carga("img/juego48.json");
 });
 
 var start=document.getElementById("start");

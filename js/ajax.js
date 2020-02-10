@@ -10,4 +10,3 @@ var ajax={
         });
     }
 }
-ajax.carga("img/juego.json");
