@@ -3,6 +3,7 @@ function Area(x,y,ancho,alto) {
     this.y=y;
     this.ancho=ancho;
     this.alto=alto;
+    /*
     this.id="a"+x+""+y;
     var div=`<div id=${this.id}></div>`;
     var contenedor=document.getElementById('contenedor').innerHTML;
@@ -13,7 +14,9 @@ function Area(x,y,ancho,alto) {
     document.getElementById(this.id).style.width=this.ancho+"px";
     document.getElementById(this.id).style.height=this.alto+"px";
     document.getElementById(this.id).style.backgroundColor=randomRGB();
+    */
 }
+/*
 function randomRGB() { 
     var r = Math.floor(Math.random()*256);          // Random between 0-255
     var g = Math.floor(Math.random()*256);          // Random between 0-255
@@ -21,3 +24,4 @@ function randomRGB() {
     var rgb = 'rgb(' + r + ',' + g + ',' + b + ')';
     return rgb;
  }
+ */
