@@ -34,6 +34,33 @@ Mapa.prototype.iniciaCapasTiles=function(layers){
         }
     }
 }
+Mapa.prototype.inciarRejilla=function(){
+    var anchoMapaPx=this.anchoMedidoEnTiles*this.anchoDeLosTiles;
+    var altoMapaPx=this.altoMedidoEnTiles*this.altoDeLosTiles;
+
+    var html="";
+    for (let ct = 0; ct < this.capasTiles.length; ct++) {
+        for (let t = 0; t < this.capasTiles[ct].tiles.length; t++) {
+            if(this.capasTiles[ct].tiles[t]==null){
+                continue;
+            }
+            var tileActual=this.capasTiles[ct].tiles[t];
+            html=html+tileActual.html;
+        }
+    }
+    document.getElementById("mapa").innerHTML=html;
+    for (let ct = 0; ct < this.capasTiles.length; ct++) {
+        for (let t = 0; t < this.capasTiles[ct].tiles.length; t++) {
+            if(this.capasTiles[ct].tiles[t]==null){
+                continue;
+            }
+            var tileActual=this.capasTiles[ct].tiles[t];
+            tileActual.aplicarEstilos();
+        }
+    }
+    document.getElementsByTagName('body')[0].style.overflow="hidden";
+
+}
 Mapa.prototype.actualizar=function () {
     
 }
