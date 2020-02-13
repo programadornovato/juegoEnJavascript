@@ -27,7 +27,7 @@
 33,34,78,78,78,78,78,78,78,78,19,139,19,38,23,24,20,36,19,138
 </data>
  </layer>
- <objectgroup color="#ff0000" id="3" name="colisiones" visible="0">
+ <objectgroup color="#ff0000" id="3" name="colisiones">
   <object id="1" x="2" y="2" width="954" height="132"/>
   <object id="2" x="2" y="142" width="902" height="44"/>
   <object id="3" x="0" y="190" width="84" height="768"/>
